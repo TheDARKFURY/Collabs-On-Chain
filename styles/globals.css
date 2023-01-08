@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+	display: none;
+}
+.super {
+	background: linear-gradient(
+			90.26deg,
+			#ffffff 0.22%,
+			#da99a9 0.23%,
+			#cf93af 9.67%,
+			rgba(103, 88, 230, 0.990462) 101.25%,
+			rgba(255, 255, 255, 0.54) 101.26%
+		),
+		#583737;
+	background-clip: text;
+	color: transparent;
+}
+.superdes {
+	background: linear-gradient(91.45deg, #8bd1d2 1.54%, #e07ff9 118.27%);
+	background-clip: text;
+	color: transparent;
+}
+.superdes1 {
+	background: linear-gradient(91.45deg, #8bd1d2 1.54%, #e07ff9 118.27%);
+	background-clip: text;
+	color: white	;
+	height: auto;
+}
+.nftheading {
+	background: linear-gradient(90.01deg, #37357e 4.09%, #ab06a4 98.16%);
+	color: transparent;
+	background-clip: text;
+}
+
+.bgLanding {
+	background-image: url('/landing.png');
+	width: 100%;
+	background-size: cover;
+	height: 100vh;
+}
+.bgForm {
+	background-image: url('/Form.png');
+	width: 100%;
+	background-size: cover;
+	background-repeat: repeat-y;
+	height: max-content;
+}
+.bgClaim {
+	background-image: url('/Form.png');
+	width: 100%;
+	background-size: cover;
+	background-repeat: repeat-y;
+	height: 100vh;
+}
+.wallet-adapter-button-trigger {
+	background: linear-gradient(
+		189.84deg,
+		#534bb2 7.39%,
+		#551ef5 77.27%
+	) !important;
+	width: 14rem !important;
+	display: flex;
+	justify-content: center;
+}
+.wallet-adapter-button {
+	border-radius: 2rem !important;
+	font-size: 1.1rem !important;
+}
+.wallet-adapter-button-start-icon {
+	width: 2rem !important;
+	height: 2rem !important;
+}
+.formborder {
+	border: #9dbcff;
+	border-style: solid;
+	border-width: 5px;
+}
+.bgnft {
+	background-image: url('/nft.svg');
+	background-size: cover;
+}
+.nftLine {
+	background: linear-gradient(90.01deg, #37357e 4.09%, #ab06a4 98.16%);
+}
