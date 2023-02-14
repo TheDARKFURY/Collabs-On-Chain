@@ -6,28 +6,20 @@
 	display: none;
 }
 .super {
-	background: linear-gradient(
-			90.26deg,
-			#ffffff 0.22%,
-			#da99a9 0.23%,
-			#cf93af 9.67%,
-			rgba(103, 88, 230, 0.990462) 101.25%,
-			rgba(255, 255, 255, 0.54) 101.26%
-		),
-		#583737;
+	background: linear-gradient(104.3deg, rgb(253, 243, 243) 10.9%, rgb(248, 231, 231) 27.8%, rgb(160, 112, 161) 101.7%);
 	background-clip: text;
+	animation: gradient 15s ease infinite;
 	color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
 }
+
+
 .superdes {
 	background: linear-gradient(91.45deg, #8bd1d2 1.54%, #e07ff9 118.27%);
 	background-clip: text;
 	color: transparent;
-}
-.superdes1 {
-	background: linear-gradient(91.45deg, #8bd1d2 1.54%, #e07ff9 118.27%);
-	background-clip: text;
-	color: white	;
-	height: auto;
 }
 .nftheading {
 	background: linear-gradient(90.01deg, #37357e 4.09%, #ab06a4 98.16%);
@@ -36,17 +28,20 @@
 }
 
 .bgLanding {
-	background-image: url('/landing.png');
-	width: 100%;
-	background-size: cover;
-	height: 100vh;
+		background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 70%);
+		background-size: 400% 400%;
+		animation: gradient 15s ease infinite;
+		height: 100vh;
+	
 }
+
 .bgForm {
-	background-image: url('/Form.png');
 	width: 100%;
-	background-size: cover;
 	background-repeat: repeat-y;
+	animation: gradient 15s ease infinite;
 	height: max-content;
+	background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 70%);
+	background-size: 400% 400%;
 }
 .bgClaim {
 	background-image: url('/Form.png');
@@ -79,9 +74,23 @@
 	border-width: 5px;
 }
 .bgnft {
-	background-image: url('/nft.svg');
+	background: linear-gradient(252deg, rgb(6, 2, 2) 32.4%, rgb(95 43 100) 98.8%);
 	background-size: cover;
+	/* border: 1px solid; */
+	padding: 10px;
+	box-shadow: 4px 7px 18px rgb(35 10 38);
 }
 .nftLine {
 	background: linear-gradient(90.01deg, #37357e 4.09%, #ab06a4 98.16%);
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

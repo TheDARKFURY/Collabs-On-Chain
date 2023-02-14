@@ -31,6 +31,7 @@ async function createWalletAndAirdrop() {
 export const mintAndTransfer = async (memberCount, AdminWallet, Members) => {
 	const wallet = await createWalletAndAirdrop()
 	const mint = await createMint(connection, wallet, wallet.publicKey, null, 9)
+	console.log(Members);
 	const associatedTokenAccount = await getOrCreateAssociatedTokenAccount(
 		connection,
 		wallet,

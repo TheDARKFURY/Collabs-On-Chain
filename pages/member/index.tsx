@@ -9,6 +9,7 @@ import {
 	addCollabName,
 	addDescription,
 	addLeadName,
+	addContributionPower,
 } from '../../features/collabInfo'
 const MemberClaim = () => {
 	const [claim, setClaim] = useState<boolean>(true)

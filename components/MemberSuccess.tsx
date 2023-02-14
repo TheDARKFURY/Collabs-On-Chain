@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import styles from '../styles/Form.module.css'
+
 
 export const MemberSuccess = () => {
 	return (
@@ -7,7 +9,7 @@ export const MemberSuccess = () => {
 			<div className='w-full flex justify-center items-center'>
 				<div className='fixed inset-0 bg-light-black backdrop-blur-sm'>
 					<div className='flex justify-center items-center min-h-screen'>
-						<div className='h-[31rem] w-[28rem]  bg-[#0A1837] opacity-80 rounded-2xl px-10 border border-white  '>
+						<div className={styles.InnerCardForm}>
 							<h1 className='flex justify-center text-5xl font-light text-white mt-10 font-Outfit '>
 								Successfull!
 							</h1>
